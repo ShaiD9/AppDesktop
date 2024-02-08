@@ -64,8 +64,8 @@ Route::get('/taches', (TaskController::class. '@index'));
 
 Route::get('/taches/creation', (TaskController::class. '@create'));
 
-Route::get('/taches/edition/{task}', (TaskController::class. '@edit'))->name('tasks.edit');
+Route::get('/taches/edition/{id}', (TaskController::class. '@edit'))->name('tasks.edition');
 
-Route::get('/taches/modification/{id}', (TaskController::class. '@save'))->name('tasks.update');
+Route::get('/taches/modification/{id}', (TaskController::class. '@save'))->name('tasks.modification');
 
 Route::get('/taches/suprimer', (TaskController::class. '@destroy'));
