@@ -18,7 +18,7 @@
                             <tr class="{{ $loop->iteration % 2 === 0 ? 'bg-gray-50' : 'bg-white' }} hover:bg-gray-100">
                                 <td class="px-6 py-4 whitespace-nowrap">{{ $loop->iteration }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap">{{ $task->name }}</td>
-                                <td class="px-6 py-4 whitespace-nowrap">{{ $task->description }}</td>
+                                <td class="px-6 py-4 whitespace">{{ $task->description }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap">{{ $task->status }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap">{{ $task->created_at }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap">
