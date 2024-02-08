@@ -74,4 +74,4 @@ Route::get('/taches/edit/{id}', [TaskController::class, 'edit'])->name('tasks.ed
 Route::put('/taches/{id}', [TaskController::class, 'update'])->name('tasks.modification');
 
 //Suprimer une tache
-Route::delete('/taches/suprimer', (TaskController::class. '@destroy'));
+Route::delete('/taches/suprimer', (TaskController::class. '@destroy'))->name('tasks.suppression');
