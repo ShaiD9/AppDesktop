@@ -60,12 +60,14 @@ Route::middleware('auth')->group(function () {
 
 //Route tasks
 
-Route::get('/taches', (TaskController::class. '@index'));
+Route::get('/taches', (TaskController::class. '@index'))->name('tasks.index');
 
-Route::get('/taches/creation', (TaskController::class. '@create'));
+Route::get('/taches/creation', (TaskController::class. '@create'))->name('tasks.creation');
+
+Route::post('/taches/enregistrer', (TaskController::class. '@store'))->name('tasks.enregistrer');
 
 Route::get('/taches/edition/{id}', (TaskController::class. '@edit'))->name('tasks.edition');
 
-Route::get('/taches/modification/{id}', (TaskController::class. '@save'))->name('tasks.modification');
+Route::post('/taches/modification/{id}', (TaskController::class. '@save'))->name('tasks.modification');
 
-Route::get('/taches/suprimer', (TaskController::class. '@destroy'));
+Route::delete('/taches/suprimer', (TaskController::class. '@destroy'));

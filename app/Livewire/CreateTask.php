@@ -5,11 +5,11 @@ namespace App\Livewire;
 use Livewire\Component;
 use App\Models\Task;
 
-class TaskTable extends Component
+class CreateTask extends Component
 {
     public function render()
     {
-        return view('livewire.task-table', [
+        return view('livewire.task-create', [
             'tasks' => Task::all()
         ]);
     }

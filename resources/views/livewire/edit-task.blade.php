@@ -1,7 +1,7 @@
-<form action="{{ route('tasks.modification', $task->id) }}" method="POST">
+<form action="" method="POST">
     @csrf
 
-    <input type="text" name="name" value="{{ $task->name }}">
+    <input type="text" name="name" value="">
     <!-- Add other task fields here -->
 
     <button type="submit">Update Task</button>
