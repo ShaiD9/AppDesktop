@@ -62,12 +62,9 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/taches', (TaskController::class. '@index'))->name('tasks.index');
 
-// Route::get('/taches/creation', (TaskController::class. '@create'))->name('tasks.creation');
+Route::get('/taches/creation', [TaskController::class, 'create'])->name('tasks.creation');
 
-// Route::post('/taches/enregistrer', (TaskController::class. '@store'))->name('tasks.enregistrer');
-
-Route::get('/create', [TaskController::class, 'create'])->name('tasks.create');
-Route::post('/taches', [TaskController::class, 'store'])->name('tasks.store');
+Route::post('/taches', [TaskController::class, 'store'])->name('tasks.enregistrer');
 
 Route::get('/taches/edition/{id}', (TaskController::class. '@edit'))->name('tasks.edition');
 
