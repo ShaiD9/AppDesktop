@@ -2,6 +2,7 @@
     <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
             <div class="overflow-hidden">
+                <h1>Tableau de liste de taches</h1>
                 <table class="min-w-full text-left text-sm font-light divide-y divide-gray-200 shadow-sm rounded-lg">
                     <thead class="bg-gray-50">
                         <tr>
