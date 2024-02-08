@@ -19,7 +19,7 @@
             @method('PUT')
             <div class="space-y-4">
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">Name:</label>
+                    <label class="block text-sm font-medium text-gray-700">Nom:</label>
                     <input type="text" name="name" value="{{ $task->name }}" class="mt-1 block w-full rounded-md bg-gray-200 border-gray-300 shadow-sm p-2">
                 </div>
                 <div>
@@ -27,7 +27,7 @@
                     <textarea name="description" style="resize: none;" class="mt-1 block w-full rounded-md bg-gray-200 border-gray-300 shadow-sm p-2">{{ $task->description }}</textarea>
                 </div>
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">State:</label>
+                    <label class="block text-sm font-medium text-gray-700">Statut:</label>
                     <select name="status" class="mt-1 block w-full rounded-md bg-gray-200 border-gray-300 shadow-sm p-2">
                         <option value="1" {{ $task->status ? 'selected' : '' }}>Active</option>
                         <option value="0" {{ !$task->status ? 'selected' : '' }}>Inactive</option>
