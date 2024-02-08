@@ -11,12 +11,12 @@
         @if (Route::has('login'))
             <div class="p-6 text-right sm:fixed sm:top-0 sm:right-0">
                 @auth
-                    <a href="{{ route('home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-indigo-500">Home</a>
+                    <a href="{{ route('home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-indigo-500">Accueil</a>
                 @else
-                    <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-indigo-500">Log in</a>
+                    <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-indigo-500">Connexion</a>
 
                     @if (Route::has('register'))
-                        <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-indigo-500">Register</a>
+                        <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-indigo-500">Inscription</a>
                     @endif
                 @endauth
             </div>
@@ -39,7 +39,7 @@
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Tailwind CSS</h2>
 
                             <p class="mt-4 text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-                                Tailwind CSS is a popular utility-first CSS framework that makes it easy to style pages by applying pre-defined classes to HTML elements.
+                                Tailwind CSS est un framework CSS utilitaire populaire qui facilite la mise en page des pages en appliquant des classes prédéfinies aux éléments HTML.
                             </p>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center w-6 h-6 mx-6 shrink-0 stroke-indigo-500">
@@ -55,7 +55,7 @@
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">AlpineJS</h2>
 
                             <p class="mt-4 text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-                                AlpineJS is a lightweight JavaScript framework that allows you to add interactivity to your HTML using simple declarative syntax.
+                                AlpineJS est un framework JavaScript léger qui vous permet d'ajouter de l'interactivité à votre HTML en utilisant une syntaxe déclarative simple.
                             </p>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center w-6 h-6 mx-6 shrink-0 stroke-indigo-500">
@@ -72,7 +72,7 @@
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Laravel</h2>
 
                             <p class="mt-4 text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-                                Laravel is a free and open-source PHP web framework that allows developers to build web applications quickly and easily.
+                                Laravel est un framework web PHP gratuit et open-source qui permet aux développeurs de créer rapidement et facilement des applications web.
                             </p>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center w-6 h-6 mx-6 shrink-0 stroke-indigo-500">
@@ -88,7 +88,7 @@
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Livewire</h2>
 
                             <p class="mt-4 text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-                                Livewire is a tool that simplifies the process of creating interactive and dynamic user interfaces using PHP and Laravel.
+                                Livewire est un outil qui simplifie le processus de création d'interfaces utilisateur interactives et dynamiques en utilisant PHP et Laravel.
                             </p>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center w-6 h-6 mx-6 shrink-0 stroke-indigo-500">
