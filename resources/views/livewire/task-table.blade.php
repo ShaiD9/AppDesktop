@@ -22,8 +22,8 @@
                                 <td class="px-6 py-4 whitespace-nowrap">{{ $task->status }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap">{{ $task->created_at }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap">
-                                    <button class="text-blue-500 hover:text-blue-700" wire:click="editTask({{ $task->id }})">Edit</button>
-                                    <button class="text-red-500 hover:text-red-700" wire:click="deleteTask({{ $task->id }})">Delete</button>
+                                    <a href="{{ route('tasks.edition', $task->id) }}" style="max-width: 150px; margin-top: 25px" class="py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Éditer</a>
+                                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" wire:click="deleteTask({{ $task->id }})">Delete</button>
                                 </td>
                             </tr>
                         @endforeach
@@ -33,6 +33,6 @@
         </div>
     </div>
     <div class="mb-6 mt-12 flex justify-center items-center">
-        <a href="{{ route('tasks.creation') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Nouvelle tâche</a>
+        <a href="{{ route('tasks.creation') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Nouvelle tâche</a>
     </div>
 </div>

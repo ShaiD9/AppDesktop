@@ -18,7 +18,7 @@ class EditTask extends Component
 
     public function render()
     {
-        return view('livewire.edit-task', [
+        return view('livewire.task-edit', [
             'tasks' => Task::all()
         ]);
     }
