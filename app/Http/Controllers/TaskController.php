@@ -35,9 +35,10 @@ class TaskController extends Controller
         return view('tasks.show', compact('task'));
     }
 
-    public function edit(Task $id)
+    public function edit($id)
     {
-        return view('tasks.edit', compact('id'));
+        $task = Task::find($id);
+        return view('tasks.edit', compact('task'));
     }
 
     public function update(Request $request, Task $task)
