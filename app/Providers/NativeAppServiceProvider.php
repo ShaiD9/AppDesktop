@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Native\Laravel\Facades\Window;
 use Native\Laravel\Contracts\ProvidesPhpIni;
+use Native\Laravel\Menu\Menu;
 
 class NativeAppServiceProvider implements ProvidesPhpIni
 {
@@ -13,6 +14,13 @@ class NativeAppServiceProvider implements ProvidesPhpIni
      */
     public function boot(): void
     {
+        Menu::new()
+            ->appMenu()
+            ->submenu('Taches', Menu::new()
+                ->link('http://localhost:8000/taches', 'Taches index')
+                ->link('http://localhost:8000/taches/creation', 'Créer une tache')
+            )
+            ->register();
         Window::open();
     }
 
